@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 
-
 function useScrollLock(lock, ref) {
     const [locked, setLocked] = useState(false || lock);
 
