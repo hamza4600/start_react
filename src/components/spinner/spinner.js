@@ -26,7 +26,7 @@ const Spinn = memo(forwardRef(
         return (
             <>
                 {type === "spinner" && (
-                    <svg id="Spinner" ref={ref} height={size} width={size} viewBox="0 0 16 16" fill="none" {...rest} color={color} >
+                    <svg id="Spinner" ref={ref} height={size} width={size} viewBox="0 0 16 16" fill="none" {...rest} color={color && color} >
                         <circle
                             cx="8"
                             cy="8"
@@ -46,7 +46,7 @@ const Spinn = memo(forwardRef(
                     </svg>
                 )}
                 {type === "dots" && (
-                    <div ref={ref} {...rest} color={color} >
+                    <div ref={ref} {...rest} color={color && color} >
                         <i />
                         <i />
                         <i />
